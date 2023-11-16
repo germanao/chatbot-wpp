@@ -1,12 +1,13 @@
 {
-  "name": "backend-teplate-node",
+  "name": "chatbot-wpp",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "nodemon",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.0.0",

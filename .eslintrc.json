@@ -13,7 +13,6 @@
     "eqeqeq": "error",
     "no-console": "warn",
     "no-unused-expressions": "warn",
-    "no-unused-vars": "warn",
     "no-useless-concat": "warn",
     "no-useless-return": "warn",
     "no-useless-rename": "warn",
