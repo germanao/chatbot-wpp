@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon",
+    "start": "nodemon",
     "test": "jest",
     "build": "tsc -p tsconfig.json"
   },
