@@ -9,7 +9,7 @@ fastify.get('/', function (request, reply) {
   return { hello: 'world' }
 })
 
-const port = +(process.env.PORT ?? 3000);
+const port = +(process.env.PORT || 3000);
 
 // Run the server!
 fastify.listen({ port }, (err) => {
