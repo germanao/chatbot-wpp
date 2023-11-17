@@ -6,8 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "nodemon",
-    "start": "ts-node src/index.ts",
-    "test": "jest"
+    "start": "ts-node --transpile-only src/index.ts",
+    "test": "jest",
+    "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.0.0",
