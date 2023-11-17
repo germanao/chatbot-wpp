@@ -9,10 +9,9 @@ fastify.get('/', function (request, reply) {
   return { hello: 'world' }
 })
 
-const port = +(process.env.PORT || 3000);
 
 // Run the server!
-fastify.listen({ port }, (err) => {
+fastify.listen({ port: process.env.PORT || 3000 }, (err) => {
   if (err !== null) {
     fastify.log.error(err)
     process.exit(1)
