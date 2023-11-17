@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
 // Import the framework and instantiate it
 import Fastify from 'fastify'
 const fastify = Fastify({
@@ -11,7 +12,7 @@ fastify.get('/', function (request, reply) {
 
 
 // Run the server!
-fastify.listen({ port: process.env.PORT || 3000 }, (err) => {
+fastify.listen({ port: +(process.env.PORT || 3000) }, (err) => {
   if (err !== null) {
     fastify.log.error(err)
     process.exit(1)
